@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autofix</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Autofix-Reparación de vehículos a domicilio</h1>
+        <section>
+          <h2>Servicios y precios</h2>
+          <div>
+            <article>
+              <img
+                src="https://i.pinimg.com/736x/70/66/e5/7066e5e273dac68838468fe04b54eaf5.jpg"
+                alt="cambio-aceite"
+              />
+              <div>
+                <h3>Cambio de aceite</h3>
+                <p>precio: $50.000</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://i.pinimg.com/736x/04/6a/ea/046aeab4d98e80e6212fefbda77c99c4.jpg"
+                alt="frenos"
+              />
+              <div>
+                <h3>Revisión de frenos</h3>
+                <p>precio: $30.000</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="https://i.pinimg.com/736x/ee/b9/f2/eeb9f20ffcf58fb712ea07169d1de0b7.jpg"
+                alt="diagnostico-electrico"
+              />
+              <div>
+                <h3>Diagnóstico eléctrico</h3>
+                <p>precio: $20.000</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </header>
+      <section>
+        <form>
+          <h2>Solicitar reparación</h2>
+          <label for="nombre">Nombre del cliente</label>
+          <input type="text" name="nombre" id="nombre" />
+          <label for="tipo-reparacion">Tipo de reparación</label>
+          <select name="tipo-reparacion" id="tipo-reparacion">
+            <option value="">Seleccione servicio</option>
+            <option value="aceite">Cambio de aceite</option>
+            <option value="frenos">Revisión de frenos</option>
+            <option value="electricidad">Diagnóstico eléctrico</option>
+          </select>
+          <label for="descripción">Descripción</label>
+          <textarea name="descripción" id="descripción" style="height: 100px;"></textarea>
+          <label for="agendamiento">Agendar cita</label>
+          <input type="datetime-local" name="agendar-cita" id="agendamiento" />
+          <hr />
+          <h3>Información de pago</h3>
+          <label for="card-info">Número de tarjeta</label>
+          <input
+            type="password"
+            name="card-info"
+            id="card-info"
+            maxlength="16"
+          />
+          <label for="nombre-titular">Nombre del titular</label>
+          <input type="text" name="nombre-titular" id="nombre-titular" />
+          <label for="CVV">CVV</label>
+          <input type="password" name="CVV" id="CVV" maxlength="3" />
+          <input type="submit" value="Confirmar solicitud" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
